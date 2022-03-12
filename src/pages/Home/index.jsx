@@ -8,7 +8,7 @@ const Home = () => {
 	const [selectedCategory, setSelectedCategory] = useState({});
 
 	return (
-		<div className='home container'>
+		<div className='home container2'>
 			<h1 className='title'>Build Your Menu</h1>
 
 			<div style={{ display: 'flex' }}>

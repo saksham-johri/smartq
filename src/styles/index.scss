@@ -1,7 +1,17 @@
 @import './colors';
 @import './mixins';
 
-.container {
+.container2 {
 	padding-left: 6rem;
 	padding-right: 6rem;
+
+	@include tablet {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	
+	@include mobile {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }

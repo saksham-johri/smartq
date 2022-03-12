@@ -1,0 +1,48 @@
+@import '../../styles/';
+
+.card-container {
+	background-color: white;
+	border-radius: 15px;
+	padding: 2rem;
+
+	.card-container-form {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1rem;
+		align-items: flex-start;
+
+		@include mobile {
+			grid-template-columns: unset;
+		}
+	}
+
+	.floatRight {
+		text-align: right;
+	}
+
+	.card-container-span {
+		margin-right: 3rem;
+		@include mobile {
+			margin-right: 0.5rem;
+		}
+	}
+}
+
+.heading {
+	padding: 2rem;
+	color: $primary;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+
+	@include mobile {
+		padding: 1rem;
+	}
+}
+
+.event {
+	font-size: 1.5rem;
+	padding: 1rem 2rem 0;
+}

@@ -12,7 +12,7 @@ const Summary = () => {
 	} = useContext(Context);
 
 	return (
-		<div className='summary-container'>
+		<div className='summary-container-page'>
 			<h3>Cart Summary</h3>
 
 			{cart?.length ? (

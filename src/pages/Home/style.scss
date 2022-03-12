@@ -8,5 +8,9 @@
 		font-size: 2.5rem;
 		text-transform: capitalize;
 		margin-bottom: 2rem;
+
+		@include mobile {
+			font-size: 1.5rem;
+		}
 	}
 }

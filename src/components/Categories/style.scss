@@ -3,7 +3,7 @@
 .category-container {
 	display: grid;
 	gap: 3rem;
-	border-right: 0.25rem solid $primary;
+	border-right: 0.25rem solid rgba($primary, 0.4);
 	padding-right: 1rem;
 	padding-top: 2rem;
 	padding-bottom: 5rem;
@@ -23,10 +23,17 @@
 
 		.icon-container {
 			height: 4rem;
+			width: 4rem;
 			overflow: hidden;
 			background-color: rgba($primary, 0.1);
 			padding: 1rem;
 			border-radius: 50%;
+
+			@include mobile {
+				height: 2rem;
+				width: 2rem;
+				padding: 0;
+			}
 
 			.icon {
 				height: 100%;
@@ -38,6 +45,14 @@
 		.name {
 			color: $primary;
 			font-size: 1.5rem;
+
+			@include tablet {
+				display: none;
+			}
+
+			@include mobile {
+				display: none;
+			}
 		}
 
 		&_selected {

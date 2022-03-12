@@ -31,6 +31,10 @@ button {
 	cursor: pointer;
 	transition-duration: 250ms;
 
+	@include mobile {
+		font-size: 0.75rem;
+	}
+
 	&:hover {
 		transform: translateY(-0.125rem);
 	}
