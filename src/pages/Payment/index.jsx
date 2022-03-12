@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import React, { useContext, useEffect, useState } from 'react';
+import { Form } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { Context } from '../../context';
 import './style.scss';
