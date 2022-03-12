@@ -17,7 +17,7 @@ const Categories = ({
 			name: firstCategoryName,
 			...categories[firstCategoryName],
 		});
-	}, [categories]);
+	}, [categories, setSelectedCategory]);
 
 	return (
 		<div className='category-container'>
