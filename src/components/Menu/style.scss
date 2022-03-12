@@ -1,0 +1,83 @@
+@import '../../styles';
+
+.menu-container {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	position: relative;
+	overflow: auto;
+	height: calc(100vh - 220px);
+
+	$card-width: 40rem;
+
+	.banner-container {
+		width: $card-width;
+		height: 10rem;
+		overflow: hidden;
+		border-radius: 0.5rem;
+
+		.banner {
+			height: 100%;
+			width: 100%;
+			object-fit: fill;
+			aspect-ratio: 16/9;
+		}
+	}
+
+	.menu-item {
+		background-color: $white;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		max-width: $card-width;
+
+		.display-details {
+			display: flex;
+			gap: 2rem;
+			padding-bottom: 1rem;
+
+			.image-contaier {
+				width: 8rem;
+				overflow: hidden;
+				border-radius: 0.25rem;
+				background-color: rgba($black, 0.01);
+
+				.image {
+					height: 100%;
+					width: 100%;
+					object-fit: contain;
+					aspect-ratio: 1/1;
+				}
+			}
+
+			.text {
+				width: 100%;
+
+				h2 {
+					font-size: 1.5rem;
+					font-weight: 600;
+					color: $black;
+					letter-spacing: 0.1em;
+					margin-bottom: 0.5rem;
+				}
+
+				p {
+					font-size: 1rem;
+					color: rgba($black, 0.6);
+				}
+			}
+
+			.price {
+				color: $primary;
+				font-size: 1.5rem;
+				font-weight: 600;
+				letter-spacing: 0.1em;
+			}
+		}
+
+		.button-container {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}
